@@ -1,4 +1,15 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+module.exports = {
+  reactStrictMode: true,
+  transpilePackages: ["@floe/next"],
 
-module.exports = nextConfig
+  images: {
+    minimumCacheTTL: 60,
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "app.floe.dev",
+        port: "",
+      },
+    ],
+  },
+};
