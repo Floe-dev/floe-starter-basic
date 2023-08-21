@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@floe/next": "1.0.0-alpha.3",
+    "@heroicons/react": "^2.0.18",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
@@ -22,5 +23,8 @@
     "react-dom": "18.2.0",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.9"
   }
 }
