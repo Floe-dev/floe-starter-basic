@@ -29,7 +29,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000/changelog](http://localhost:3000/changelog) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 #### 4. (Optional) Configure a data source
 This starter template comes with a sample `.floe` directory (in Floe this is known as a 'data source'). To use this data source in your template, you must add it to your project in the [Floe dashboard](https://floe.dev).
