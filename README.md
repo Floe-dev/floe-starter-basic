@@ -15,8 +15,8 @@ pnpm i
 
 #### 2. Set environment variables in `.env.local`
 ```
-NEXT_PUBLIC_FLOE_API_KEY_ID=
-FLOE_API_KEY_SECRET=
+NEXT_PUBLIC_FLOE_API_KEY_ID=...
+FLOE_API_KEY_SECRET=...
 ```
 
 #### 3. Run the development server:
