@@ -1,8 +1,25 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a starter template for [Floe](https://floe.dev).
 
 ## Getting Started
 
-First, run the development server:
+> The following assumes you have already created a project in https://app.floe.dev.
+
+#### 1. Install dependencies
+```bash
+npm install
+# or
+yarn
+# or
+pnpm i
+```
+
+#### 2. Set environment variables in `.env.local`
+```
+NEXT_PUBLIC_FLOE_API_KEY_ID=
+FLOE_API_KEY_SECRET=
+```
+
+#### 3. Run the development server:
 
 ```bash
 npm run dev
@@ -14,18 +31,14 @@ pnpm dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### 4. (Optional) Configure a data source
+This starter template comes with a sample `.floe` directory (in Floe this is known as a 'data source'). To use this data source in your template, you must add it to your project in the [Floe dashboard](https://floe.dev).
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Alternatively, you can add `.floe` directory in another repository and set that as your data source instead.
 
 ## Learn More
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Check out [the docs](https://floe-dev.notion.site/Docs-ef503e987aaa4dabb1e388cac9e14d62?pvs=4) to learn more about using Floe.
 
 ## Deploy on Vercel
 
