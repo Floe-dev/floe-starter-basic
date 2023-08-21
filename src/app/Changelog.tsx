@@ -63,13 +63,15 @@ const Changelog = ({ changelog }: { changelog: ChangelogData }) => (
       <ChangelogPrimitive.Reactions className="flex items-center justify-center">
         {reactions.map(({ type, selectedIcon, unselectedIcon }) => (
           <ChangelogPrimitive.Reaction type={type} key={type}>
-            <ChangelogPrimitive.ReactionTrigger className="flex items-center gap-1.5 rounded-lg hover:bg-gray-800 px-2 py-1 cursor-pointer">
-              <ChangelogPrimitive.ReactionSelectedIcon>
-                {selectedIcon}
-              </ChangelogPrimitive.ReactionSelectedIcon>
-              <ChangelogPrimitive.ReactionUnselectedIcon>
-                {unselectedIcon}
-              </ChangelogPrimitive.ReactionUnselectedIcon>
+            <ChangelogPrimitive.ReactionTrigger className="group flex items-center gap-1.5 rounded-lg hover:bg-gray-800 px-2 py-1 cursor-pointer">
+              <div className="transition-transform group-active:scale-[0.85] ease-in-out duration-75">
+                <ChangelogPrimitive.ReactionSelectedIcon>
+                  {selectedIcon}
+                </ChangelogPrimitive.ReactionSelectedIcon>
+                <ChangelogPrimitive.ReactionUnselectedIcon>
+                  {unselectedIcon}
+                </ChangelogPrimitive.ReactionUnselectedIcon>
+              </div>
               <ChangelogPrimitive.ReactionCount />
             </ChangelogPrimitive.ReactionTrigger>
           </ChangelogPrimitive.Reaction>

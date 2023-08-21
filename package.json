@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@floe/next": "1.0.0-alpha.3",
+    "@floe/next": "1.0.0-alpha.4",
     "@heroicons/react": "^2.0.18",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
