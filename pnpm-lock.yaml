@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@floe/next':
-    specifier: 1.0.0-alpha.3
-    version: 1.0.0-alpha.3(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 1.0.0-alpha.4
+    version: 1.0.0-alpha.4(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0)
   '@heroicons/react':
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
@@ -104,8 +104,8 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@floe/next@1.0.0-alpha.3(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-WERPle8vYyc1SK9rPP3Tio/L1MaONNIUS6i6bV+bDlDyG3IR8avZIoJyqarmtcc+jY1XAWKDIkn+TlDM9mpSfQ==}
+  /@floe/next@1.0.0-alpha.4(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-DXp+4PU9+mAigHT+dZrli4OSP5JZmIqD3Xl1FncIt1vcuxih4mBapRdLjKVEzWdnTWfw4vyLHkqQ1/I/IORBhw==}
     peerDependencies:
       next: '>=13'
       react: '>=18'
