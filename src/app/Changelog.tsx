@@ -2,8 +2,8 @@
 
 import React from "react";
 import { PhotoIcon } from "@heroicons/react/24/solid";
-import { Changelog as ChangelogPrimitive } from "@floe/next";
-import type { ChangelogData } from "@floe/next";
+import { PostPrimitive } from "@floe/next";
+import type { RenderedPostContent } from "@floe/next";
 import {
   FaceSmileIcon,
   FaceFrownIcon,
@@ -16,7 +16,7 @@ import {
 } from "@heroicons/react/24/solid";
 
 const reactions: {
-  type: keyof ChangelogPrimitive.ReactionsProps["reactions"];
+  type: keyof PostPrimitive.ReactionsProps["reactions"];
   selectedIcon: JSX.Element;
   unselectedIcon: JSX.Element;
 }[] = [
@@ -37,48 +37,48 @@ const reactions: {
   },
 ];
 
-const Changelog = ({ changelog }: { changelog: ChangelogData }) => (
-  <ChangelogPrimitive.Root changelog={changelog}>
+const Changelog = ({ changelog }: { changelog: RenderedPostContent }) => (
+  <PostPrimitive.Root post={changelog}>
     <div className="relative pb-16 mb-20 border-b last:mb-0 last:pb-0 last:border-0 border-zinc-700">
       {/* DATE */}
-      <ChangelogPrimitive.Date className="text-gray-400" />
+      <PostPrimitive.Date className="text-gray-400" />
 
       {/* IMAGE */}
-      <ChangelogPrimitive.Image className="relative w-full h-56 m-0 mt-2 overflow-hidden md:h-96 rounded-xl">
-        <ChangelogPrimitive.ImagePlaceholder className="absolute inset-0 flex items-center justify-center w-full h-full bg-gray-700 animate-pulse">
+      <PostPrimitive.Image className="relative w-full h-56 m-0 mt-2 overflow-hidden md:h-96 rounded-xl">
+        <PostPrimitive.ImagePlaceholder className="absolute inset-0 flex items-center justify-center w-full h-full bg-gray-700 animate-pulse">
           <PhotoIcon className="w-10 h-10 text-gray-400" />
-        </ChangelogPrimitive.ImagePlaceholder>
-        <ChangelogPrimitive.ImageError className="absolute inset-0 flex items-center justify-center w-full h-full bg-gray-700">
+        </PostPrimitive.ImagePlaceholder>
+        <PostPrimitive.ImageError className="absolute inset-0 flex items-center justify-center w-full h-full bg-gray-700">
           <PhotoIcon className="w-10 h-10 text-gray-400" />
-        </ChangelogPrimitive.ImageError>
-      </ChangelogPrimitive.Image>
+        </PostPrimitive.ImageError>
+      </PostPrimitive.Image>
 
       {/* TITLE */}
-      <ChangelogPrimitive.Title />
+      <PostPrimitive.Title />
 
       {/* CONTENT */}
-      <ChangelogPrimitive.Content />
+      <PostPrimitive.Content />
 
       {/* REACTIONS */}
-      <ChangelogPrimitive.Reactions className="flex items-center justify-center">
+      <PostPrimitive.Reactions className="flex items-center justify-center">
         {reactions.map(({ type, selectedIcon, unselectedIcon }) => (
-          <ChangelogPrimitive.Reaction type={type} key={type}>
-            <ChangelogPrimitive.ReactionTrigger className="group flex items-center gap-1.5 rounded-lg hover:bg-gray-800 px-2 py-1 cursor-pointer">
+          <PostPrimitive.Reaction type={type} key={type}>
+            <PostPrimitive.ReactionTrigger className="group flex items-center gap-1.5 rounded-lg hover:bg-gray-800 px-2 py-1 cursor-pointer">
               <div className="transition-transform group-active:scale-[0.85] ease-in-out duration-75">
-                <ChangelogPrimitive.ReactionSelectedIcon>
-                  {selectedIcon}
-                </ChangelogPrimitive.ReactionSelectedIcon>
-                <ChangelogPrimitive.ReactionUnselectedIcon>
-                  {unselectedIcon}
-                </ChangelogPrimitive.ReactionUnselectedIcon>
+              <PostPrimitive.ReactionSelectedIcon>
+                {selectedIcon}
+              </PostPrimitive.ReactionSelectedIcon>
+              <PostPrimitive.ReactionUnselectedIcon>
+                {unselectedIcon}
+              </PostPrimitive.ReactionUnselectedIcon>
               </div>
-              <ChangelogPrimitive.ReactionCount />
-            </ChangelogPrimitive.ReactionTrigger>
-          </ChangelogPrimitive.Reaction>
+              <PostPrimitive.ReactionCount />
+            </PostPrimitive.ReactionTrigger>
+          </PostPrimitive.Reaction>
         ))}
-      </ChangelogPrimitive.Reactions>
+      </PostPrimitive.Reactions>
     </div>
-  </ChangelogPrimitive.Root>
+  </PostPrimitive.Root>
 );
 
 export default Changelog;

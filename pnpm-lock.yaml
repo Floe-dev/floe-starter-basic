@@ -2,8 +2,8 @@ lockfileVersion: '6.0'
 
 dependencies:
   '@floe/next':
-    specifier: 1.0.0-alpha.4
-    version: 1.0.0-alpha.4(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0)
+    specifier: 1.0.0-alpha.6
+    version: 1.0.0-alpha.6(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0)
   '@heroicons/react':
     specifier: ^2.0.18
     version: 2.0.18(react@18.2.0)
@@ -104,14 +104,14 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@floe/next@1.0.0-alpha.4(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-DXp+4PU9+mAigHT+dZrli4OSP5JZmIqD3Xl1FncIt1vcuxih4mBapRdLjKVEzWdnTWfw4vyLHkqQ1/I/IORBhw==}
+  /@floe/next@1.0.0-alpha.6(@types/react@18.2.20)(next@13.4.18)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-p9Icm8/WsfGr1o3OR219kUmDFeTLSRklysdp6KTCRGrNhk3mY5M7tiCqE/cWSwGB0/5F2VhItnk9+7sUlAI2xg==}
     peerDependencies:
       next: '>=13'
       react: '>=18'
       react-dom: '>=18'
     dependencies:
-      '@floe/server': 1.0.0-alpha.3(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
+      '@floe/server': 1.0.0-alpha.5(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0)
       next: 13.4.18(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -121,8 +121,8 @@ packages:
       - react-native
     dev: false
 
-  /@floe/server@1.0.0-alpha.3(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
-    resolution: {integrity: sha512-EuuOTtFTAGjo5Ysc9sKCrMtpval5p8pzpYlCez5AyVfhVoo8ubZwT++dIhsFQBSPhDoNAQyYkveRyMUx2ZQPIg==}
+  /@floe/server@1.0.0-alpha.5(@types/react@18.2.20)(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Nsb3pmnPmRs0fg9qfNRb87HX45D26NDgi7k+MO7FV6hPaW7HgnCHK7haEXjVzzeAknzYcNcJBoMa6i4FzDFxWg==}
     engines: {node: '>=18'}
     peerDependencies:
       react: '>=18'
