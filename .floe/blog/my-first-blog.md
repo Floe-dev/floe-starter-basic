@@ -1,5 +1,6 @@
 ---
 title: "My first blog"
+subtitle: "I wrote it with Floe"
 date: 2023-08-31
 authors: []
 ---
