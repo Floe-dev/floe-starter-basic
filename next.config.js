@@ -10,6 +10,11 @@ module.exports = {
         hostname: "app.floe.dev",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "avatars.githubusercontent.com",
+        port: "",
+      }
     ],
   },
 };
